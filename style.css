@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    background: rgb(30,27,31);
+    background: linear-gradient(90deg, rgba(30,27,31,1) 24%, rgba(255,85,0,0.6334908963585435) 49%, rgba(255,154,0,0.711922268907563) 85%, rgba(255,201,0,0.711922268907563) 97%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20rem;
+    height: 17vh;
+    font-weight: 700;
+}
+
+.logo{
+    width: 5rem;
+}
+
+.ul-header{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.li-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 8vw;
+    height: 8vh;
+}
+
+.li-header:hover{
+    transform: translateY(-0.5rem);
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.home{
+    background-color: rgba(0, 0, 0, 0.74);
+    height: 83vh;
+}
+
+.conheca{
+    background-color: red;
+    height: 100vh;
+}
+
+.areas{
+    background-color: green;
+    height: 100vh;
+}
+
+.ensino{
+    background-color: violet;
+    height: 100vh;
+}
+
+.pacotes{
+    background-color: orange;
+    height: 100vh;
+}
+
+.contato{
+    background-color: salmon;
+    height: 100vh;
+}
+
+footer{
+    background-color: aqua;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ul-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    list-style: none;
+    font-size: 2rem;
+}
+
+.ul-footer-2{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    list-style: none;
+    font-size: 2rem;
+}
