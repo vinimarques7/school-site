@@ -42,13 +42,21 @@ header{
 }
 
 .home{
-    background-color: rgba(0, 0, 0, 0.74);
     height: 83vh;
 }
 
+
 .conheca{
-    background-color: red;
+    background-color: burlywood;
     height: 100vh;
+}
+
+.uniev-front{
+    margin-top: 7rem;
+    margin-left: 7rem;
+    width: 50vw;
+    height: 50vh;
+    box-shadow: 0 0 20px rgba(1, 0, 0, 2);
 }
 
 .areas{
