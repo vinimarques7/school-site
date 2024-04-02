@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
-header{
+/* Header com logo e topicos */
+
+.header-nav{
     background: rgb(30,27,31);
     background: linear-gradient(90deg, rgba(30,27,31,1) 24%, rgba(255,85,0,0.6334908963585435) 49%, rgba(255,154,0,0.711922268907563) 85%, rgba(255,201,0,0.711922268907563) 97%);
     display: flex;
@@ -22,7 +25,7 @@ header{
 
 .ul-header{
     display: flex;
-    gap: 3rem;
+    gap: 2.5rem;
     list-style: none;
 }
 
@@ -35,34 +38,139 @@ header{
     height: 8vh;
 }
 
-.li-header:hover{
+.li-header:hover {
     transform: translateY(-0.5rem);
     transition: 0.5s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1), 0 0 10px rgba(0, 0, 0, 1) inset; /* Adiciona sombra para cima e para baixo */
 }
 
-.home{
-    height: 83vh;
+
+/* Home com vídeo e texto de introdução*/
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 83vh; 
+    overflow: hidden; 
 }
 
+#home-video{
+    width: 100%;
+    height: auto;
+}
+
+.video-content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; 
+    margin-top: 2rem;
+    font-family: arial;
+}
+
+#home-text{
+    margin-bottom: 20rem;
+    margin-left: 12rem;
+    font-size: 2.5rem;
+    color: #ffff;
+    border-bottom: solid;
+}
+
+#home-text, #home-text-p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Conheça com imagem da universidade e apresentação */
 
 .conheca{
-    background-color: burlywood;
+    background-color: rgba(0, 0, 0, 0.801);
     height: 100vh;
 }
 
-.uniev-front{
-    margin-top: 7rem;
-    margin-left: 7rem;
-    width: 50vw;
-    height: 50vh;
+#quem-somos{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #ffff;
+    border-bottom: solid;
+    box-shadow: 0 0 10px rgba(0, 0, 1, 1);
+}
+
+.img-text-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.uniev-front-img{
+    margin-top: 4rem;
+    margin-left: 3rem;
+    width: 40vw;
+    height: 68vh;
+    border-radius: 5%;
     box-shadow: 0 0 20px rgba(1, 0, 0, 2);
 }
+
+.text-container{
+    width: 45vw;
+    height: 69vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: solid 1px;
+    border-radius: 5%;
+}
+
+#story-text{
+    width: 40vw;
+    color: #ffff;
+}
+
+/* Áreas com os cursos e pesquisas */
 
 .areas{
     background-color: green;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+.icon-container{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#first-column{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#second-column{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#area-icons{
+    width: 8rem;
+}
+
+
+
+/* Ensino com as cadeiras e formas de ensino */
 
 .ensino{
     background-color: violet;
@@ -101,4 +209,104 @@ footer{
     gap: 2.5rem;
     list-style: none;
     font-size: 2rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    *{
+        width: 50vw;
+    }
+    
+    .header-nav{
+        width: 98vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10rem;
+        height: 18vh;
+        font-weight: 700;
+    }
+    
+    .logo{
+        width: 5rem;
+        margin-right: 19rem;
+    }
+    
+    .ul-header{
+        flex-direction: column;
+        gap: 0.5rem;
+        height: 5vh;
+        list-style: none;
+    }                                            nnnnnnnn
+    
+    .li-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 8vw;
+        height: 8vh;
+    }
+
+    /* Estilos para telas menores que 768px de largura */
+    .home {
+        width: 98vw;
+        height: auto; /* Por exemplo, tornar a altura automática para que o vídeo se ajuste melhor */
+    }
+    
+    #home-video {
+        max-width: 100%; /* Definir largura máxima */
+        height: auto; /* Altura automática para manter a proporção do vídeo */
+    }
+
+    .li-header{
+        background-color: red;
+        height: 2vh;
+    }
+    #home-text{
+        margin-bottom: 20rem;
+        margin-left: 0.3rem;
+        color: #ffff;
+        border-bottom: solid;
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    /* Estilos para telas menores que 768px de largura */
+    header{
+        width: 100vw;
+    }
+
+    .header-nav{
+        width: 100%;
+        flex-direction: column;
+    }
+    .home {
+        width: 100vw;
+    }
+
+    .video-content {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        transform: translate(-50%, -50%);
+        font-size: 2.5rem;
+        text-align: center;
+        z-index: 1; 
+        margin-top: 2rem;
+        font-family: arial;
+    }
+    
+    
+    #home-text{
+        color: #ffff;
+        border-bottom: solid;
+    }
+    
+    #home-video {
+        max-width: 100%; /* Definir largura máxima */
+        height: auto; /* Altura automática para manter a proporção do vídeo */
+    }
 }

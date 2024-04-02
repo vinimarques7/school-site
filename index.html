@@ -9,47 +9,87 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="/assets/UniEv-no-slogan.png" alt="">
-        <ul class="ul-header">
-            <li class="li-header">HOME</li>
-            <li class="li-header">CONHEÇA</li>
-            <li class="li-header">ENSINO</li>
-            <li class="li-header">ÁREAS</li>
-            <li class="li-header">PACOTES</li>
-            <li class="li-header">CONTATO</li>
-        </ul>
+        <nav class="header-nav">
+            <img class="logo" src="/assets/UniEv-no-slogan.png" alt="">
+            <ul class="ul-header">
+                <li class="li-header">HOME</li>
+                <li class="li-header">CONHEÇA</li>
+                <li class="li-header">ENSINO</li>
+                <li class="li-header">ÁREAS</li>
+                <li class="li-header">PACOTES</li>
+                <li class="li-header">CONTATO</li>
+            </ul>
+        </nav>
     </header>
     <nav>
-        <div class="home">
-            <video width="640" height="360" controls>
+        <!-- Section de Home com vídeo de apresentação -->
+        <section class="home">
+            <div class="video-content">
+                <h1 id="home-text">Bem-vindo a Universidade Evolutiva!<p id="home-text-p">Unidade, Universo e Futuro</p></h1>
+                <img id="profile-pic" src="/assets/profile-pic (1).png" alt="">
+            </div>
+            <video id="home-video" width="640" height="360"  autoplay loop muted>
                 <source src="/assets/videos/estudantes-andando.mp4" type="video/mp4">
-                Seu navegador não suporta o elemento de vídeo.
             </video>
-        </div>
-        <div class="conheca">
-            <img class="uniev-front" src="/assets/uniev-front.png" alt="">
-            <p>APRESENTAÇÃO COM IMAGENS DE FUNDO</p>
-        </div>
-        <div class="areas">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <p>Parte de áreas</p>
-        </div>
-        <div class="ensino">
+        </section>
+
+        <!-- Section de apresentação da universidade -->
+        <section class="conheca">
+            <h1 id="quem-somos">Quem somos nós?</h1>
+            <div class="img-text-container">
+                <img class="uniev-front-img" src="/assets/uniev-front.png" alt="">
+                <div class="text-container">
+                    <p id="story-text">A Universidade Uni Evolutiva (anteriormente conhecida como Universidade Imperial Palmares), fundada em 1870 no Brasil, 
+                        é uma instituição de renome que preserva uma arquitetura barroca e está inserida em um ambiente natural 
+                        deslumbrante. Desde sua fundação, a universidade tem promovido valores de excelência acadêmica, 
+                        diversidade e cidadania responsável. <br><br>Reconhecida pelo Ministério da Educação, a Uni Evolutiva mantém
+                        consistentemente nota 5 em seus cursos, refletindo seu compromisso com a qualidade educacional. Ao longo dos anos
+                        tornou-se um refúgio para mentes inquietas e um terreno fértil para a inovação. <br><br> Sua reputação estelar a
+                        torna uma fonte de inspiração e orgulho para o Brasil e além.Com um olhar voltado para o futuro, continua a 
+                        ser um farol de esperança e oportunidade para as gerações presentes e futuras.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Section de áreas: cursos e pesquisas -->
+        <section class="areas">
+            <div class="icon-container">
+                <div id="first-column">
+                    <img id="area-icons" src="/assets/area/icones/engenharias.png" alt="">
+                    <img id="area-icons" src="/assets/area/icones/medicina.png" alt="">
+                    <img id="area-icons" src="/assets/area/icones/tecnologia.png" alt="">
+                    <img id="area-icons" src="/assets/area/icones/natureza.png" alt="">
+                </div>
+                <div id="second-column">
+                    <img id="area-icons" src="/assets/area/icones/humanas.png" alt="">
+                    <img id="area-icons" src="/assets/area/icones/linguagens.png" alt="">
+                    <img id="area-icons" src="/assets/area/icones/artes.png" alt="">
+                    <img id="area-icons" src="" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section dos tipos de ensino, cadeiras, laboratórios, etc -->
+        <section class="ensino">
             <img src="" alt="">
             <img src="" alt="">
             <img src="" alt="">
             <p>Parte do plano de ensino. Aqui vai ter os assuntos e matérias disponíveis. Possivelmente com um carrosel</p>
-        </div>
-        <div class="pacotes">
+        </section>
+
+        <!-- Section de financeiro, os pacotes e bolsas disponíveis -->
+        <section class="pacotes">
             <p>Área de pacotes</p>
-        </div>
-        <div class="contato">
+        </section>
+
+        <!-- Section de contato da universidade -->
+        <section class="contato">
             <p>Área de contato. Aqui vai ter um formulário com o nome, email, número de telefone e uma mensagem. E definir se é aluno, responsável, professor ou alguém em busca de emprego</p>
             <p>Neste pode se dar um feedback, informar ou mandar dados para processos seletivos da escola seja ela qual for a vaga</p>
-        </div>
+        </section>
     </nav>
+
+    <!-- Footer do site -->
     <footer>
         <ul class="ul-footer">
             <li><a href="">Sobre Nós</a></li>
