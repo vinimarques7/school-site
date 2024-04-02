@@ -39,7 +39,6 @@
 }
 
 .li-header:hover {
-    transform: translateY(-0.5rem);
     transition: 0.5s;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1), 0 0 10px rgba(0, 0, 0, 1) inset; /* Adiciona sombra para cima e para baixo */
 }
