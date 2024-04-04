@@ -136,8 +136,7 @@
 
 /* Áreas com os cursos e pesquisas */
 
-.areas{
-    /* background-color: burlywood; */
+/* .areas{
     background-color: greenyellow;
     height: 80vh;
     display: flex;
@@ -145,7 +144,7 @@
     align-items: center;
     gap: 3rem;
     
-}
+} */
 
 #conheca-areas{
     display: flex;
@@ -160,14 +159,22 @@
 
 .slider{
     margin: 0 auto;
-    width: 55vw;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    height: 100vh;
+    gap: 2rem;
     background-color: red;
 }
 
 .slides{
-    width: 200px;
-    height: 400px;
+    width: 100vw;
+    height: 80vh;
     display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    background-color: black;
+    
 }
 
 .slides input{
@@ -175,25 +182,46 @@
 }
 
 .slide{
-    width: 25%;
-    position: relative;
+    width: 1vw;
+    margin-left: 2rem;
 }
 
-.slide img{
-    width: 20vw;
+.slider img{
+    width: 50vw;
+    height: 70vh;
 }
 
 .manual-navigation{
     position: absolute;
-    width: 800px;
-    margin-top: -40px;
+    width: 100vw;
+    margin-top: 33rem;
     display: flex;
+    justify-content: center;
 }
 
-/* #img-manipul{
-    width: 20vw;
-    height: 20vh;
-} */
+#manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#manual-btn:not(:last-child){
+    margin-right: 3rem;
+}
+
+#manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio2:checked ~.first{
+    margin-left: -25%;
+}
 
 
 
@@ -265,7 +293,7 @@ footer{
         gap: 0.5rem;
         height: 5vh;
         list-style: none;
-    }                                            nnnnnnnn
+    }                                            
     
     .li-header{
         display: flex;
@@ -276,15 +304,15 @@ footer{
         height: 8vh;
     }
 
-    /* Estilos para telas menores que 768px de largura */
+   
     .home {
         width: 98vw;
-        height: auto; /* Por exemplo, tornar a altura automática para que o vídeo se ajuste melhor */
+        height: auto; 
     }
     
     #home-video {
-        max-width: 100%; /* Definir largura máxima */
-        height: auto; /* Altura automática para manter a proporção do vídeo */
+        max-width: 100%; 
+        height: auto;
     }
 
     .li-header{
