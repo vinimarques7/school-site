@@ -158,7 +158,42 @@
     box-shadow: 0 0 10px rgba(0, 0, 1, 1);
 }
 
+.slider{
+    margin: 0 auto;
+    width: 55vw;
+    background-color: red;
+}
 
+.slides{
+    width: 200px;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 20vw;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+}
+
+/* #img-manipul{
+    width: 20vw;
+    height: 20vh;
+} */
 
 
 
