@@ -98,10 +98,10 @@ body{
 #quem-somos{
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 2.5rem;
     color: #040404;
     border-bottom: solid;
-    box-shadow: 0 0 10px rgba(0, 0, 1, 1);
     width: 100%;
 }
 
@@ -166,22 +166,28 @@ body{
 
 .text-container-area{
     width: 40vw;
-    height: 61vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     border: solid 1px;
     border-radius: 5%;
-    background-color: bisque;
 }
 
 .area-text{
-    background-color: white;
-    width: 85%;
-    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 0.9rem;
+    width: 90%;
+    height: 95%;
+}
+
+#text-p{
+    font-size: 1rem;
 }
 
 .slides{
@@ -190,7 +196,7 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
     overflow-x: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 1, 1);
     border-radius: 5%;
@@ -324,35 +330,41 @@ body{
 /* Ensino com as cadeiras e formas de ensino */
 
 .ensino{
-    background-color: violet;
     height: 100vh;
+    background-color: #e9cca528;
 }
 
-#quem-somos{
-    display: flex;
-    justify-content: center;
-    font-size: 2.5rem;
-    color: #040404;
-    border-bottom: solid;
-    box-shadow: 0 0 10px rgba(0, 0, 1, 1);
-    width: 100%;
+.coordenacao{
+    margin-top: 4rem;
 }
 
-.docentes{
+
+.coordenadores-linha1{
     display: flex;
     justify-content: space-evenly;
+    height: 30vh;
 }
 
-.docentes img{
+.coordenadores-linha2{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    height: 30vh;
+}
+
+.coordenadores-linha1 p, .coordenadores-linha2 p{
+    display: flex;
+    align-items: center;
+    height: 15vh;
     width: 10vw;
-    height: 25vh;
+    font-size: 0.7rem;
+    font-weight: 800;
 }
 
 
-#docente{
-    width: 10vw;
-    box-shadow: 0 0 10px rgba(0, 0, 1, 1);
-}
+
+
+
 
 
 /* Pacotes de preço */

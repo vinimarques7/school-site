@@ -12,10 +12,10 @@
         <nav class="header-nav">
             <img class="logo" src="/assets/UniEv-no-slogan.png" alt="">
             <ul class="ul-header">
-                <li class="li-header">HOME</li>
-                <li class="li-header">CONHEÇA</li>
-                <li class="li-header">ÁREAS</li>
-                <li class="li-header">ENSINO</li>
+                <li class="li-header"><a href="#home" tabindex="1">HOME</a></li>
+                <li class="li-header"><a href="#conheca" tabindex="2">CONHEÇA</a></li>
+                <li class="li-header"><a href="#areas" tabindex="3">ÁREAS</a></li>
+                <li class="li-header"><a href="#ensino" tabindex="4">DOCENTES</a></li>
                 <li class="li-header">PACOTES</li>
                 <li class="li-header">CONTATO</li>
             </ul>
@@ -23,7 +23,7 @@
     </header>
     <nav>
         <!-- Section de Home com vídeo de apresentação -->
-        <section class="home">
+        <section id="home" class="home">
             <div class="video-content">
                 <h1 id="home-text">Bem-vindo a Universidade Evolutiva!<p id="home-text-p">Unidade, Universo e Futuro</p></h1>
                 <img id="profile-pic" src="/assets/profile-pic (1).png" alt="">
@@ -34,7 +34,7 @@
         </section>
 
         <!-- Section de apresentação da universidade -->
-        <section class="conheca">
+        <section id="conheca" class="conheca">
             <h1 id="quem-somos">Quem somos nós?</h1>
             <div class="img-text-container">
                 <img class="uniev-front-img" src="/assets/uniev-front.png" alt="">
@@ -54,12 +54,27 @@
 
 
         <!-- Section de áreas: cursos e pesquisas -->
-        <section class="areas">
+        <section id="areas" class="areas">
             <h1 id="conheca-areas">Conheça nossas áreas!</h1>
                 <div class="slider">
 
                     <div class="text-container-area">
-                        <p class="area-text">Hello</p>
+                        <div class="area-text">
+                            <p id="text-p">        
+                                Descubra um mundo de possibilidades e excelência acadêmica em nossa universidade, 
+                                onde cada área é uma porta de entrada para o sucesso e a realização pessoal!
+                            </p>
+                                <ul>
+                                    <li><strong>ENGENHARIA:</strong> desafie os limites da criatividade e da inovação. Construa pontes entre o presente e o futuro, criando soluções que transformam o mundo ao nosso redor.</li>
+                                    <li><strong>TECNOLOGIA:</strong> domine as ferramentas do amanhã e lidere a revolução digital. Desenvolva soluções inteligentes para os desafios do século XXI e transforme a maneira como vivemos e trabalhamos.</li>
+                                    <li><strong>MEDICINA:</strong> mergulhe no estudo do corpo humano e na busca incessante pela saúde e bem-estar. Seja o herói que salva vidas e transforma comunidades.</li>
+                                    <li><strong>CIÊNCIAS BIOLÓGICAS:</strong> Nas Ciências Biológicas, desvende os mistérios da vida e da natureza. Explore a diversidade da vida em nosso planeta e descubra maneiras de preservá-la para as gerações futuras.</li>
+                                    <li><strong>HUMANAS:</strong> mergulhe na complexidade da mente humana e da sociedade. Compreenda o passado, analise o presente e transforme o futuro com sabedoria e empatia.</li>
+                                    <li><strong>LINGUAGENS:</strong> explore a diversidade das formas de comunicação. Aprenda a expressar-se em diferentes idiomas e mídias, ampliando sua capacidade de interação e compreensão.</li>
+                                    <li><strong>DIREITO:</strong> defenda os valores da justiça e da equidade. Seja a voz dos que não podem falar e lute pela construção de um mundo mais justo e igualitário.</li>
+                                    <li><strong>EXPRESSÕES ARTÍSTICAS:</strong> liberte sua imaginação e explore os limites da criatividade. Deixe sua marca no mundo através da arte, inspirando e emocionando pessoas ao redor do globo.</li>
+                                </ul>
+                        </div>
                     </div>
                     
                     <div class="slides">
@@ -130,30 +145,22 @@
         <!-- </section> -->
 
         <!-- Section dos tipos de ensino, cadeiras, laboratórios, etc -->
-        <section class="ensino">
+        <section id="ensino" class="ensino">
             <h1 id="quem-somos">Nosso ensino e Corpo Docente</h1>
-            <div class="locais-ensino">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-            <div class="docentes">
-                <div class="docentes-medicina">
-                    <p id="docente"><img src="/assets/area/docentes/medicina-suzana.png" alt="">
-                    <img src="/assets/area/docentes/medicina-flavio.png" alt="">Coordenadores do departamento de Medicina - Suzana e Flavio</p>
+
+            <div class="coordenacao">
+                <div class="coordenadores-linha1">
+                    <img id="coodenador" src="/assets/area/docentes/medicina-suzana.png" alt=""><p>Coordenadora do departamento de Medicina - Suzana</p>
+                    <img id="coodenador" src="/assets/area/docentes/engenharia-leonardo.png" alt=""><p>Coordenador do departamento de Engenharia - Leonardo</p>
+                    <img id="coodenador" src="/assets/area/docentes/biologicas-luna-antony.png" alt=""><p>Coordenadores do departamento de Ciências Biológicas - Luna e Antony</p>
+                    <img id="coodenador" src="/assets/area/docentes/tecnologia-luciana.png" alt=""><p>Coordenadora do departamento de Tecnologia - Luciana</p>
                 </div>
-                <div class="docentes-engenharia">
-                    <p id="docente"><img src="/assets/area/docentes/engenharia-leonardo.png" alt="">
-                    <img src="/assets/area/docentes/engenharia-ricardo.webp" alt=""> Cordenadores do Departamento de Engenharias - Leonardo e Ricardo</p>
+                <div class="coordenadores-linha2">
+                    <img id="coodenador" src="/assets/area/docentes/direito-gustavo.webp" alt=""><p>Coordenador do departamento de Direito - Gustavo</p>
+                    <img id="coodenador" src="/assets/area/docentes/humanas-genivaldo.png" alt=""><p>Coordenador do departamento de Humanas - Genivaldo</p>
+                    <img id="coodenador" src="/assets/area/docentes/arte-jonas.webp" alt=""><p>Coordenador do departamento de Expressões Artísticas - Jonas</p>
                 </div>
-                <p id="docente" ><img src="/assets/area/docentes/biologicas-luna-antony.png" alt="">Coordernadores do Departamento de Ciências Biológicas - Antony e Luna</p>
-                <p id="docente" ><img src="/assets/area/docentes/tecnologia-luciana.png" alt="">Coordernador do Departamento de Tecnologia - Luciana</p>
-                <p id="docente" ><img src="/assets/area/docentes/direito-gustavo.webp" alt="">Coordernador do Departamento de Direito - Gustavo</p>
-                <p id="docente" ><img src="/assets/area/docentes/humanas-genivaldo.png" alt="">Coordernador do Departamento de Humanas - Genivaldo</p>
-                <p id="docente"><img src="/assets/area/docentes/arte-jonas.webp" alt=""> Coordenador do Departamento de Artes - Jonas</p>
             </div>
-            
-            <p>Parte do plano de ensino. Aqui vai ter os assuntos e matérias disponíveis. Possivelmente com um carrosel</p>
         </section>
 
         <!-- Section de financeiro, os pacotes e bolsas disponíveis -->
