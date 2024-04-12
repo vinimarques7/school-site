@@ -5,188 +5,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>School-site</title>
+    <link rel="icon" href="/assets/UniEv-no-slogan.png" type="image/png">
+    <title>Universidade Evolutiva</title>
 </head>
 <body>
-    <header>
+    <header id="home" >
         <nav class="header-nav">
-            <img class="logo" src="/assets/UniEv-no-slogan.png" alt="">
+            <a href="#home"><img class="logo" src="/assets/UniEv-no-slogan.png" alt=""></a>
             <ul class="ul-header">
                 <li class="li-header"><a href="#home" tabindex="1">HOME</a></li>
                 <li class="li-header"><a href="#conheca" tabindex="2">CONHEÇA</a></li>
                 <li class="li-header"><a href="#areas" tabindex="3">ÁREAS</a></li>
                 <li class="li-header"><a href="#ensino" tabindex="4">DOCENTES</a></li>
-                <li class="li-header">PACOTES</li>
-                <li class="li-header">CONTATO</li>
+                <li class="li-header"><a href="/extra-pages/ingresso.index.html">INGRESSO</a></li>
+                <li class="li-header"><a href="#contato">CONTATO</a></li>
+                <li class="li-header" id="area-aluno-header"><a href="/extra-pages/area-aluno.html">ÁREA DO ALUNO</a></li>
             </ul>
         </nav>
     </header>
-    <nav>
-        <!-- Section de Home com vídeo de apresentação -->
-        <section id="home" class="home">
-            <div class="video-content">
-                <h1 id="home-text">Bem-vindo a Universidade Evolutiva!<p id="home-text-p">Unidade, Universo e Futuro</p></h1>
-                <img id="profile-pic" src="/assets/profile-pic (1).png" alt="">
-            </div>
-            <video id="home-video" width="640" height="360"  autoplay loop muted>
-                <source src="/assets/videos/estudantes-andando.mp4" type="video/mp4">
-            </video>
-        </section>
+    <nav class="scroll-container">
+        <nav class="navigation-nav">
+                <!-- Section de Home com vídeo de apresentação -->
+                <section class="home">
+                    <div class="video-content">
+                        <h1 id="home-text">Bem-vindo a Universidade Evolutiva!<p id="home-text-p">Unidade, Universo e Futuro</p></h1>
+                        <img id="profile-pic" src="/assets/profile-pic (1).png" alt="">
+                    </div>
+                    <video id="home-video" width="640" height="360"  autoplay loop muted>
+                        <source src="/assets/videos/estudantes-andando.mp4" type="video/mp4">
+                    </video>
+                </section>
 
-        <!-- Section de apresentação da universidade -->
-        <section id="conheca" class="conheca">
-            <h1 id="quem-somos">Quem somos nós?</h1>
-            <div class="img-text-container">
-                <img class="uniev-front-img" src="/assets/uniev-front.png" alt="">
-                <div class="text-container">
-                    <p id="story-text">A Universidade Uni Evolutiva (anteriormente conhecida como Universidade Imperial Palmares), fundada em 1870 no Brasil, 
-                        é uma instituição de renome que preserva uma arquitetura barroca e está inserida em um ambiente natural 
-                        deslumbrante. Desde sua fundação, a universidade tem promovido valores de excelência acadêmica, 
-                        diversidade e cidadania responsável. <br><br>Reconhecida pelo Ministério da Educação, a Uni Evolutiva mantém
-                        consistentemente nota 5 em seus cursos, refletindo seu compromisso com a qualidade educacional. Ao longo dos anos
-                        tornou-se um refúgio para mentes inquietas e um terreno fértil para a inovação. <br><br> Sua reputação estelar a
-                        torna uma fonte de inspiração e orgulho para o Brasil e além.Com um olhar voltado para o futuro, continua a 
-                        ser um farol de esperança e oportunidade para as gerações presentes e futuras.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Section de áreas: cursos e pesquisas -->
-        <section id="areas" class="areas">
-            <h1 id="conheca-areas">Conheça nossas áreas!</h1>
-                <div class="slider">
-
-                    <div class="text-container-area">
-                        <div class="area-text">
-                            <p id="text-p">        
-                                Descubra um mundo de possibilidades e excelência acadêmica em nossa universidade, 
-                                onde cada área é uma porta de entrada para o sucesso e a realização pessoal!
+                <!-- Section de apresentação da universidade -->
+                <section id="conheca" class="conheca">
+                    <br>
+                    <h1 id="quem-somos">Quem somos nós?</h1>
+                    <div class="img-text-container">
+                        <img class="uniev-front-img" src="/assets/uniev-front.png" alt="">
+                        <div class="text-container">
+                            <p id="story-text">A Universidade Uni Evolutiva (anteriormente conhecida como Universidade Imperial Palmares), fundada em 1870 no Brasil, 
+                                é uma instituição de renome que preserva uma arquitetura barroca e está inserida em um ambiente natural 
+                                deslumbrante. Desde sua fundação, a universidade tem promovido valores de excelência acadêmica, 
+                                diversidade e cidadania responsável. <br><br>Reconhecida pelo Ministério da Educação, a Uni Evolutiva mantém
+                                consistentemente nota 5 em seus cursos, refletindo seu compromisso com a qualidade educacional. Ao longo dos anos
+                                tornou-se um refúgio para mentes inquietas e um terreno fértil para a inovação. <br><br> Sua reputação estelar a
+                                torna uma fonte de inspiração e orgulho para o Brasil e além.Com um olhar voltado para o futuro, continua a 
+                                ser um farol de esperança e oportunidade para as gerações presentes e futuras.
                             </p>
-                                <ul>
-                                    <li><strong>ENGENHARIA:</strong> desafie os limites da criatividade e da inovação. Construa pontes entre o presente e o futuro, criando soluções que transformam o mundo ao nosso redor.</li>
-                                    <li><strong>TECNOLOGIA:</strong> domine as ferramentas do amanhã e lidere a revolução digital. Desenvolva soluções inteligentes para os desafios do século XXI e transforme a maneira como vivemos e trabalhamos.</li>
-                                    <li><strong>MEDICINA:</strong> mergulhe no estudo do corpo humano e na busca incessante pela saúde e bem-estar. Seja o herói que salva vidas e transforma comunidades.</li>
-                                    <li><strong>CIÊNCIAS BIOLÓGICAS:</strong> Nas Ciências Biológicas, desvende os mistérios da vida e da natureza. Explore a diversidade da vida em nosso planeta e descubra maneiras de preservá-la para as gerações futuras.</li>
-                                    <li><strong>HUMANAS:</strong> mergulhe na complexidade da mente humana e da sociedade. Compreenda o passado, analise o presente e transforme o futuro com sabedoria e empatia.</li>
-                                    <li><strong>LINGUAGENS:</strong> explore a diversidade das formas de comunicação. Aprenda a expressar-se em diferentes idiomas e mídias, ampliando sua capacidade de interação e compreensão.</li>
-                                    <li><strong>DIREITO:</strong> defenda os valores da justiça e da equidade. Seja a voz dos que não podem falar e lute pela construção de um mundo mais justo e igualitário.</li>
-                                    <li><strong>EXPRESSÕES ARTÍSTICAS:</strong> liberte sua imaginação e explore os limites da criatividade. Deixe sua marca no mundo através da arte, inspirando e emocionando pessoas ao redor do globo.</li>
-                                </ul>
                         </div>
                     </div>
-                    
-                    <div class="slides">
-                        <!-- Botões radio -->
-                        <input type="radio" name="radio-byn" id="radio1">
-                        <input type="radio" name="radio-byn" id="radio2">
-                        <input type="radio" name="radio-byn" id="radio3">
-                        <input type="radio" name="radio-byn" id="radio4">
-                        <input type="radio" name="radio-byn" id="radio5">
-                        <input type="radio" name="radio-byn" id="radio6">
-                        <input type="radio" name="radio-byn" id="radio7">
-                        <input type="radio" name="radio-byn" id="radio8">
+                </section>
 
-                        <!-- Slide imagens -->
-                        <div class="slide first">
-                            <img src="/assets/area/area-engenharias.webp" alt="Imagem 1">
-                        </div>
-                        <div class="slide">
-                            <img src="/assets/area/areas-tecnologia.jpg" alt="Imagem 2">
-                        </div>
-                        <div class="slide">
-                            <img src="/assets/area/area-medicina.jpg" alt="Imagem 3">
-                        </div>
-                        <div class="slide">
-                            <img src="/assets/area/area-biologicas.webp" alt="Imagem 4">
-                        </div>
-                        <div class="slide">
-                            <img src="/assets/area/area-humanas.webp" alt="Imagem 5">
-                        </div>
-                        <div class="slide">
-                            <img src="/assets/area/area-linguagens.avif" alt="Imagem 6">
-                        </div>
-                        <div class="slide">
-                            <img src="/assets/area/area-direito.jpg" alt="Imagem 7">
-                        </div>
-                        <div class="slide">
-                            <img src="/assets/area/area-artes.jpg" alt="Imagem 8">
-                        </div>
 
-                        <!-- Navegação automática -->
-                        <div class="navigation-auto">
-                            <div id="auto-btn1"></div>
-                            <div id="auto-btn2"></div>
-                            <div id="auto-btn3"></div>
-                            <div id="auto-btn4"></div>
-                            <div id="auto-btn5"></div>
-                            <div id="auto-btn6"></div>
-                            <div id="auto-btn7"></div>
-                            <div id="auto-btn8"></div>
-                        </div>
+                <!-- Section de áreas: cursos e pesquisas -->
+                <section id="areas" class="areas">
+                    <br>
+                    <br>
+                    <br>
+                    <h1 id="conheca-areas">Conheça nossas áreas!</h1>
+                        <div class="slider">
 
+                            <div class="text-container-area">
+                                <div class="area-text">
+                                    <p id="text-p">        
+                                        Descubra um mundo de possibilidades e excelência acadêmica em nossa universidade, 
+                                        onde cada área é uma porta de entrada para o sucesso e a realização pessoal!
+                                    </p>
+                                        <ul class="area-li">
+                                            <li><strong>ENGENHARIA:</strong> desafie os limites da criatividade e da inovação. Construa pontes entre o presente e o futuro, criando soluções que transformam o mundo ao nosso redor.</li>
+                                            <li><strong>TECNOLOGIA:</strong> domine as ferramentas do amanhã e lidere a revolução digital. Desenvolva soluções inteligentes para os desafios do século XXI e transforme a maneira como vivemos e trabalhamos.</li>
+                                            <li><strong>MEDICINA:</strong> mergulhe no estudo do corpo humano e na busca incessante pela saúde e bem-estar. Seja o herói que salva vidas e transforma comunidades.</li>
+                                            <li><strong>CIÊNCIAS BIOLÓGICAS:</strong> Nas Ciências Biológicas, desvende os mistérios da vida e da natureza. Explore a diversidade da vida em nosso planeta e descubra maneiras de preservá-la para as gerações futuras.</li>
+                                            <li><strong>HUMANAS:</strong> mergulhe na complexidade da mente humana e da sociedade. Compreenda o passado, analise o presente e transforme o futuro com sabedoria e empatia.</li>
+                                            <li><strong>LINGUAGENS:</strong> explore a diversidade das formas de comunicação. Aprenda a expressar-se em diferentes idiomas e mídias, ampliando sua capacidade de interação e compreensão.</li>
+                                            <li><strong>DIREITO:</strong> defenda os valores da justiça e da equidade. Seja a voz dos que não podem falar e lute pela construção de um mundo mais justo e igualitário.</li>
+                                            <li><strong>EXPRESSÕES ARTÍSTICAS:</strong> liberte sua imaginação e explore os limites da criatividade. Deixe sua marca no mundo através da arte, inspirando e emocionando pessoas ao redor do globo.</li>
+                                        </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="slides">
+                                <!-- Botões radio -->
+                                <input type="radio" name="radio-byn" id="radio1">
+                                <input type="radio" name="radio-byn" id="radio2">
+                                <input type="radio" name="radio-byn" id="radio3">
+                                <input type="radio" name="radio-byn" id="radio4">
+                                <input type="radio" name="radio-byn" id="radio5">
+                                <input type="radio" name="radio-byn" id="radio6">
+                                <input type="radio" name="radio-byn" id="radio7">
+                                <input type="radio" name="radio-byn" id="radio8">
+
+                                <!-- Slide imagens -->
+                                <div class="slide first">
+                                    <img src="/assets/area/area-engenharias.webp" alt="Imagem 1">
+                                </div>
+                                <div class="slide">
+                                    <img src="/assets/area/areas-tecnologia.jpg" alt="Imagem 2">
+                                </div>
+                                <div class="slide">
+                                    <img src="/assets/area/area-medicina.jpg" alt="Imagem 3">
+                                </div>
+                                <div class="slide">
+                                    <img src="/assets/area/area-biologicas.webp" alt="Imagem 4">
+                                </div>
+                                <div class="slide">
+                                    <img src="/assets/area/area-humanas.webp" alt="Imagem 5">
+                                </div>
+                                <div class="slide">
+                                    <img src="/assets/area/area-linguagens.avif" alt="Imagem 6">
+                                </div>
+                                <div class="slide">
+                                    <img src="/assets/area/area-direito.jpg" alt="Imagem 7">
+                                </div>
+                                <div class="slide">
+                                    <img src="/assets/area/area-artes.jpg" alt="Imagem 8">
+                                </div>
+
+                                <!-- Navegação automática -->
+                                <div class="navigation-auto">
+                                    <div id="auto-btn1"></div>
+                                    <div id="auto-btn2"></div>
+                                    <div id="auto-btn3"></div>
+                                    <div id="auto-btn4"></div>
+                                    <div id="auto-btn5"></div>
+                                    <div id="auto-btn6"></div>
+                                    <div id="auto-btn7"></div>
+                                    <div id="auto-btn8"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="manual-navigation">
+                                <label for="radio1" id="manual-btn"></label>
+                                <label for="radio2" id="manual-btn"></label>
+                                <label for="radio3" id="manual-btn"></label>
+                                <label for="radio4" id="manual-btn"></label>
+                                <label for="radio5" id="manual-btn"></label>
+                                <label for="radio6" id="manual-btn"></label>
+                                <label for="radio7" id="manual-btn"></label>
+                                <label for="radio8" id="manual-btn"></label>
+                            </div>
+
+                        </div>                
+                </section>
+
+                <!-- </section> -->
+
+                <!-- Section dos tipos de ensino, cadeiras, laboratórios, etc -->
+                <section id="ensino" class="ensino">
+                    <br>
+                    <h1 id="quem-somos">Representantes do Corpo Docente</h1>
+
+                    <div class="coordenacao">
+                        <div class="coordenadores-linha1">
+                            <img id="coordenador" src="/assets/area/docentes/medicina-suzana.png" alt=""><p id="coordenador-p"><a href="/extra-pages/docentes.html">Coordenadora do departamento de Medicina - Suzana Alvaraz</a></p>
+                            <img id="coordenador" src="/assets/area/docentes/engenharia-leonardo.png" alt=""><p id="coordenador-p"><a href="/extra-pages/docentes.html">Coordenador do departamento de Engenharia - Leonardo Cavalvanti</a></p>
+                            <img id="coordenador" src="/assets/area/docentes/biologicas-luna-antony.png" alt=""><p id="coordenador-p"><a href="/extra-pages/docentes.html">Coordenadores do departamento de Ciências Biológicas - Luna Maria e Antony da Paz</a></p>
+                            <img id="coordenador" src="/assets/area/docentes/tecnologia-luciana.png" alt=""><p id="coordenador-p"><a href="/extra-pages/docentes.html">Coordenadora do departamento de Tecnologia - Luciana Camila</a></p>
+                        </div>
+                        <div class="coordenadores-linha2">
+                            <img id="coordenador" src="/assets/area/docentes/linguagens-laura.png" alt=""><p id="coordenador-p"><a href="/extra-pages/docentes.html">Coordenadora do departamento de Linguagens - Laura Vilanova</a></p>
+                            <img id="coordenador" src="/assets/area/docentes/direito-gustavo.webp" alt=""><p id="coordenador-p"><a href="/extra-pages/docentes.html">Coordenador do departamento de Direito - Gustavo Peixoto</a></p>
+                            <img id="coordenador" src="/assets/area/docentes/humanas-genivaldo.png" alt=""><p id="coordenador-p"><a href="/extra-pages/docentes.html">Coordenador do departamento de Humanas - Genivaldo Pessoa</a></p>
+                            <img id="coordenador" src="/assets/area/docentes/arte-jonas.webp" alt=""><p id="coordenador-p"><a href="/extra-pages/docentes.html">Coordenador do departamento de Expressões Artísticas - Jonas Emilio</a></p>
+                        </div>
                     </div>
+                </section>
 
-                    <div class="manual-navigation">
-                        <label for="radio1" id="manual-btn"></label>
-                        <label for="radio2" id="manual-btn"></label>
-                        <label for="radio3" id="manual-btn"></label>
-                        <label for="radio4" id="manual-btn"></label>
-                        <label for="radio5" id="manual-btn"></label>
-                        <label for="radio6" id="manual-btn"></label>
-                        <label for="radio7" id="manual-btn"></label>
-                        <label for="radio8" id="manual-btn"></label>
-                    </div>
 
-                </div>                
-        </section>
+                <!-- Section para o FAQs da universidade -->
+                <section id="contato" class="contato">
+                    <fieldset class="contato-fieldset"><h1 id="contato-title">Deixe sua mensagem ou faça uma pergunta!</h1>
+                        <form>
+                            <div>
+                                <label>Nome:</label>
+                                <input type="text" placeholder="Digite seu nome" required>
+                            </div>
+                            <div>
+                                <label>Email:</label>
+                                <input type="email" placeholder="Seu email" required>
+                            </div>
+                            <div>
+                                <label>Você é:</label>
+                                <input type="radio" name="persona" value="responsavel">
+                                <label>Responsável</label>
+                                <input type="radio" name="persona" value="aluno">
+                                <label>Aluno</label>
+                                <input type="radio" name="persona" value="aluno">
+                                <label>Aluno Independente</label>
+                            </div>
+                            <div>
+                                <textarea name="comentario" cols="73" rows="10" placeholder="Contribua com um feedback!"></textarea>
+                            </div>
 
-        <!-- </section> -->
+                            <input id="form-submit" type="submit" value="Enviar">
+                        </form>
+                    </fieldset>
+                </section>
+            </nav>
 
-        <!-- Section dos tipos de ensino, cadeiras, laboratórios, etc -->
-        <section id="ensino" class="ensino">
-            <h1 id="quem-somos">Nosso ensino e Corpo Docente</h1>
-
-            <div class="coordenacao">
-                <div class="coordenadores-linha1">
-                    <img id="coodenador" src="/assets/area/docentes/medicina-suzana.png" alt=""><p>Coordenadora do departamento de Medicina - Suzana</p>
-                    <img id="coodenador" src="/assets/area/docentes/engenharia-leonardo.png" alt=""><p>Coordenador do departamento de Engenharia - Leonardo</p>
-                    <img id="coodenador" src="/assets/area/docentes/biologicas-luna-antony.png" alt=""><p>Coordenadores do departamento de Ciências Biológicas - Luna e Antony</p>
-                    <img id="coodenador" src="/assets/area/docentes/tecnologia-luciana.png" alt=""><p>Coordenadora do departamento de Tecnologia - Luciana</p>
+            <!-- Footer do site -->
+            <footer>
+                <div class="footer-lists">
+                    <ul class="ul-footer">
+                        <li><a href="#conheca">Sobre Nós</a></li>
+                        <li><a href="">Email</a></li>
+                        <li>Ouvidoria +12 3456-7890</li>
+                    </ul>
+                    <ul class="ul-footer-2">
+                        <li><a href="">Central de Ajuda</a></li>
+                        <li>Nossos Parceiros</li>
+                        <li><a href="/extra-pages/links-footer/politica-privacidade.html">Política de Privacidade</a></li>
+                    </ul>
                 </div>
-                <div class="coordenadores-linha2">
-                    <img id="coodenador" src="/assets/area/docentes/direito-gustavo.webp" alt=""><p>Coordenador do departamento de Direito - Gustavo</p>
-                    <img id="coodenador" src="/assets/area/docentes/humanas-genivaldo.png" alt=""><p>Coordenador do departamento de Humanas - Genivaldo</p>
-                    <img id="coodenador" src="/assets/area/docentes/arte-jonas.webp" alt=""><p>Coordenador do departamento de Expressões Artísticas - Jonas</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section de financeiro, os pacotes e bolsas disponíveis -->
-        <section class="pacotes">
-            <p>Área de pacotes</p>
-        </section>
-
-        <!-- Section de contato da universidade -->
-        <section class="contato">
-            <p>Área de contato. Aqui vai ter um formulário com o nome, email, número de telefone e uma mensagem. E definir se é aluno, responsável, professor ou alguém em busca de emprego</p>
-            <p>Neste pode se dar um feedback, informar ou mandar dados para processos seletivos da escola seja ela qual for a vaga</p>
-        </section>
+                    <P id="informacoes">Para mais informações, clique <a href="">aqui</a></P>
+                    <p>Todos os direitos reservados Uniev | 2024*</p>
+            </footer>
+        </nav>
     </nav>
-
-    <!-- Footer do site -->
-    <footer>
-        <ul class="ul-footer">
-            <li><a href="">Sobre Nós</a></li>
-            <li><a href="">Email</a></li>
-            <li>Ouvidoria +12 3456-7890</li>
-        </ul>
-        <ul class="ul-footer-2">
-            <li><a href="">Central de Ajuda</a></li>
-            <li>Nossos Parceiros</li>
-            <li>Política de Privacidade</li>
-        </ul>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
