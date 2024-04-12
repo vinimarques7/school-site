@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+
+    overflow-x: hidden;
+}
+
+/* Header com logo e topicos */
+
+.header-nav {
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5rem;
+    height: 15vh;
+    font-weight: 700;
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    left: 0;
+    z-index: 1000; 
+}
+
+
+
+.logo{
+    width: 5rem;
+    margin-left: 1.2rem;
+}
+
+.ul-header{
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+
+.li-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 5vw;
+    height: 5vh;
+    font-size: 1.2rem;
+}
+
+.li-header a{
+    text-decoration: none;
+    color: inherit;
+    width: 5vw;
+    
+}
+
+
+.li-header:hover {
+    transition: 0.5s;
+    color: rgb(236, 99, 8);
+}
+
+img{
+    width: 20vw;
+}
+
+/* section medicina */
+
+.medicina-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20rem;
+    height: 100vh;
+}
+
+#curriculo-medicina{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.07rem;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+/* section engenharias */
+
+.engenharias-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20rem;
+    height: 100vh;
+}
+
+#curriculo-engenharias{}
+
+/* section biologicas*/
+
+.biologicas-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20rem;
+    background-color: blue;
+    height: 100vh;
+}
+
+/* section tecnologia */
+
+.tecnologia-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20rem;
+    background-color: cornflowerblue;
+    height: 100vh;
+}
+
+/* section linguagens */
+
+.linguagens-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20rem;
+    background-color: lemonchiffon;
+    height: 100vh;
+}
+
+/* section direito */
+
+.direito-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20rem;
+    background-color: crimson;
+    height: 100vh;
+}
+/* section humanas */
+
+.humanas-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20rem;
+    background-color: lavender;
+    height: 100vh;
+}
+/* section artes*/
+
+.artes-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20rem;
+    background-color: midnightblue;
+    height: 100vh;
+}
+
+.biologicas-div img, .tecnologia-div img, .linguagens-div img, .direito-div img, .humanas-div img{
+    height: 70vh;
+    width: 30vw;
+}
+
+.artes-div img{
+    height: 55vh;
+    width: 20vw;
+}

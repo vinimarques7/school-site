@@ -256,14 +256,14 @@ body{
 .manual-navigation{
     position: absolute;
     width: 100vw;
-    margin-top: 26.5rem;
-    margin-left: 39.8rem;
+    margin-top: 26.23rem;
+    margin-left: 51.1rem;
     display: flex;
     justify-content: center;
 }
 
 #manual-btn{
-    border: 2px solid #FFF;
+    border: 2px solid black;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
